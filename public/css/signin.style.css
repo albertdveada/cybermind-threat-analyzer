@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #212121;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    background-image: url(../img/360_F_691001909_HeV6WG7RFEILiie4gXfzoZoz1CoXmwc3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Wrapper untuk login container */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+/* Login Container */
+.login-container {
+    text-align: center;
+    width: 380px;
+    max-width: 90%;
+    margin: 20px auto;
+}
+.logo_alien{
+    text-decoration: none;
+}
+/* Logo */
+.logo {
+    font-family: 'Oxanium', sans-serif;
+    color: #e0e0e0;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+/* Bagian ".NET" pada logo */
+.logo-net {
+    color: #D2B26E; /* Golden/Light Brown */
+}
+
+/* Tagline */
+.tagline {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 1.1em;
+    color: #b0b0b0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+/* Form Styling - PERUBAHAN DI SINI */
+.login-form input { /* DIUBAH: Selector agar berlaku untuk semua input */
+    width: calc(100% - 20px);
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1em;
+    font-weight: 500;
+    outline: none;
+    transition: border-width 0.3s ease, border-color 0.3s ease;
+}
+
+/* Placeholder color - TIDAK ADA PERUBAHAN DI SINI (sudah benar) */
+.login-form input::placeholder {
+    color: #666666;
+}
+
+/* Border menyala saat input di-hover - PERUBAHAN DI SINI */
+.login-form input:hover { /* DIUBAH: Selector agar berlaku untuk semua input */
+    border: 1.5px solid #03d4b8;
+}
+
+/* Border menyala saat input difokus - PERUBAHAN DI SINI */
+.login-form input:focus { /* DIUBAH: Selector agar berlaku untuk semua input */
+    border: 1.5px solid #03d4b8;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #D2B26E;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-bottom: 25px;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #DDC89A;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tombol Sign In */
+.btn-signin {
+    background-color: #D2B26E;
+    color: #212121;
+    margin-bottom: 25px;
+}
+
+.btn-signin:hover {
+    background-color: #DDC89A;
+}
+
+.btn-signin .fas {
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+/* Tombol Google */
+.btn-google {
+    background-color: #383838;
+    color: #e0e0e0;
+    padding: 12px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.btn-google:hover {
+    background-color: #4c4c4c;
+}
+
+.google-icon {
+    width: 25px;
+    height: 25px;
+}
+
+/* Separator "or" */
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 25px 0;
+    color: #888;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #444;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
+
+/* Sign up text */
+.signup-text {
+    font-size: 0.95em;
+    color: #b0b0b0;
+    margin-bottom: 0;
+}
+
+/* Link Sign Up */
+.signup-link {
+    color: #D2B26E;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+    color: #DDC89A;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    color: #a0a0a0;
+    font-size: 0.85em;
+}
+
+.footer .logo-footer {
+    color: #D2B26E;
+    font-weight: 600;
+}
+
+.footer .privacy-terms {
+    color: #a0a0a0;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer .privacy-terms:hover {
+    color: #e0e0e0;
+}
+
+/* Bottom Right Box (Privacy Terms Icon) */
+.bottom-right-box {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    background-color: #383838;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.bottom-right-box:hover {
+    background-color: #4c4c4c;
+}
+
+.bottom-right-box .privacy-icon {
+    width: 25px;
+    height: 25px;
+    opacity: 0.7;
+}
+
+/* ==================================== */
+/* GENERAL ALERT COMPONENT STYLES       */
+/* ==================================== */
+
+.alert-container {
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95em;
+    opacity: 1;
+    height: auto;
+    overflow: hidden;
+    transition: opacity 0.3s ease, height 0.3s ease, padding 0.3s ease, margin 0.3s ease;
+    color: #ffffff; /* Warna teks default putih */
+}
+
+/* Specific styles for Error Alert */
+.alert-error {
+    background-color: #e74c3c; /* Warna merah */
+}
+
+/* Specific styles for Success Alert */
+.alert-success {
+    background-color: #28a745; /* Warna hijau untuk sukses */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Sama seperti error, atau bisa disesuaikan */
+}
+
+.alert-content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.alert-icon {
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+.alert-message {
+    margin: 0;
+    line-height: 1.3;
+}
+
+.alert-close {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.3em;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: color 0.2s ease;
+}
+
+.alert-close:hover {
+    color: #f0f0f0;
+}
+
+.alert-close {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.3em;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: color 0.2s ease;
+}
+
+.alert-close:hover {
+    color: #f0f0f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 0 25px;
+        width: calc(100% - 50px);
+    }
+
+    .logo {
+        font-size: 1.8em;
+    }
+
+    .tagline {
+        font-size: 0.95em;
+    }
+
+    .btn, .login-form input {
+        padding: 12px;
+        font-size: 1em;
+    }
+
+    .forgot-password, .signup-text {
+        font-size: 0.85em;
+    }
+
+    .footer {
+        font-size: 0.75em;
+        padding: 10px 0;
+    }
+
+    .footer .privacy-terms {
+        display: block;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .bottom-right-box {
+        width: 30px;
+        height: 30px;
+    }
+
+    .bottom-right-box .privacy-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
